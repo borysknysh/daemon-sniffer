@@ -1,0 +1,27 @@
+Interactive DAEMON-SNIFFER
+Programs that intercept the network traffic flowing in and out of a system through network interfaces.
+It has three main parts:
+As interactive: there is command line interface which controls daemon execution;
+As sniffer: Program that intercept the network traffic flowing in and out of a system through network interfaces;
+As daemon: It works in background mode.
+
+
+How to run daemon:
+1)Must be a superuser:
+sudo su
+2)compile using gcc:
+gcc -o main main.c shell.c binaryTree.c
+3)run main:
+./main
+
+or
+
+run runme.sh:
+1):
+bash runme.sh
+2):
+chmod u+x runme.sh
+./runme.sh
+
+Enjoy!
+
