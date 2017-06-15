@@ -211,7 +211,7 @@ int lsh_showCount(char **args)
   }
   if(btSearch(ip,tree) == NULL)
   {
-    printf("Given IP %d.%d.%d.%d doesn't exists in binary search tree\n", ip[0], ip[1], ip[2], ip[3]);
+    printf("Given IP %d.%d.%d.%d doesn't exist in binary search tree\n", ip[0], ip[1], ip[2], ip[3]);
     return 1;
   }
   printf("Number of packets received from %s is %d\n",args[1], btSearch(ip,tree)->nPackets);
