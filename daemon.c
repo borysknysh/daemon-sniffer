@@ -81,6 +81,7 @@ int main(int argc, char **argv)
     }
 
     freeifaddrs(addrs);
+    freeifaddrs(tmp);
     while(1)
     {
         saddr_size = sizeof saddr;
@@ -95,6 +96,7 @@ int main(int argc, char **argv)
         ProcessPacket(buffer , data_size);
     }
     close(sock_raw);
+    free(buffer);
     fprintf(logfile,"Finished");
     fclose(logfile);
     fclose(logfileIP);
